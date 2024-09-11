@@ -126,7 +126,7 @@ nav a:hover {
   gap: 60px;
 }
 .service-content {
-  width: 200px;
+  width: 100%;
 }
 .service-data {
   display: flex;
@@ -145,7 +145,7 @@ nav a:hover {
 }
 .service-content p {
   font-size: 18px;
-  width: 300px;
+  width: 100%;
   color: var(--grey);
 }
 #aboutUs {
@@ -219,11 +219,65 @@ nav a:hover {
   background-size: cover;
   background-position: center;
 }
+#contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+  margin: 160px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  gap: 32px;
+}
+.imputs-get-in-touch {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.imputs-get-in-touch input {
+  padding: 12px 16px;
+  width: 100%;
+  border: 1px solid var(--primary-dark);
+  outline: none;
+}
+.adress {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.details-adress {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.detail {
+  display: flex;
+  gap: 12px;
+}
+.detail img {
+  width: 40px;
+  height: 40px;
+}
+.detail h6 {
+  color: var(--grey);
+}
+.follow-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.social-links {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+}
 
 @media screen and (min-width: 320px) {
-  .service-content p {
-    width: 100%;
-  }
 }
 @media screen and (min-width: 480px) {
   .header-content h1 {
@@ -233,15 +287,15 @@ nav a:hover {
     font-size: 24px;
     margin: 8px 0px 24px 0px;
   }
+  .service-content {
+    width: 300px;
+  }
   .primary-btn {
     padding: 10px 24px;
     font-size: 16px;
   }
   .footer-links {
     flex-direction: row;
-  }
-  .service-content {
-    width: 300px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -273,6 +327,9 @@ nav a:hover {
   #service {
     flex-direction: row;
   }
+  .service-content {
+    width: 300px;
+  }
   .footer-content {
     flex-direction: row;
     justify-content: space-between;
@@ -286,6 +343,9 @@ nav a:hover {
   }
   #aboutUs {
     text-align: start;
+  }
+  #contact-us {
+    flex-direction: row;
   }
 }
 @media screen and (min-width: 1200px) {
