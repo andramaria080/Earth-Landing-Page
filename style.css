@@ -258,6 +258,7 @@ form {
 .detail {
   display: flex;
   gap: 12px;
+  align-items: center;
 }
 .detail img {
   width: 40px;
@@ -265,6 +266,11 @@ form {
 }
 .detail h6 {
   color: var(--grey);
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 .follow-content {
   display: flex;
