@@ -29,14 +29,39 @@
     </section>
 
     <section id="contact-us" class="container">
-      <form action="">
+      <form action="" id="contactForm" name="contactForm">
         <h1>Get In Touch</h1>
         <div class="imputs-get-in-touch">
-          <input type="text" name="" placeholder="Your Name" />
-          <input type="text" name="" placeholder="Phone Number" />
-          <input type="email" name="email" placeholder="E-mail" />
-          <textarea name="message" id="" cols="30" rows="10"></textarea>
-          <div><button class="primary-btn">SEND NOW</button></div>
+          <input
+            type="text"
+            name="name"
+            id="nameForm"
+            placeholder="Your Name"
+            autocomplete="given-name"
+          />
+          <input
+            type="tel"
+            name="phone"
+            id="phoneForm"
+            placeholder="Phone Number"
+            autocomplete="tel"
+          />
+          <input
+            type="email"
+            name="email"
+            id="emailForm"
+            placeholder="E-mail"
+            autocomplete="email"
+          />
+          <textarea
+            name="message"
+            id="messageForm"
+            cols="30"
+            rows="10"
+            required
+          ></textarea>
+          <div><button type="submit" class="primary-btn">SEND NOW</button></div>
+          <div id="result"></div>
         </div>
       </form>
 
@@ -90,5 +115,5 @@
       </footer>
     </section>
   </body>
-  <!-- <script src="earth.js"></script> -->
+  <script src="./contact.js"></script>
 </html>
