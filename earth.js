@@ -2,6 +2,7 @@ const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
 const serviceData = document.getElementById("service");
 const getInTouchBtn = document.getElementById("getInTouchBtn");
+const exploreBtn = document.getElementById("exploreBtn");
 
 menuBtn.addEventListener("click", function () {
   navLinks.classList.toggle("active");
@@ -10,6 +11,12 @@ menuBtn.addEventListener("click", function () {
 getInTouchBtn.addEventListener("click", function () {
   window.location.href = "./contact.html";
 });
+serviceData.addEventListener("click", function (service) {
+  window.location.href = "./services.html";
+});
+exploreBtn.addEventListener("click", function () {
+  window.location.href = "./services.html";
+});
 
 const data = [
   {
@@ -17,20 +24,24 @@ const data = [
     title: "Web Design",
     paragraph:
       "Custom web design for small businesses we help you capture new audience and increase your sales",
+    id: "web-design-ctg",
   },
   {
     image: "./img/service-2.png",
     title: "Graphic Design",
     paragraph:
       "Logos, merchandise and more. Anyone can create nice graphics. We think it`s better to crate memorable ones. ",
+    id: "graphic-design-ctg",
   },
   {
     image: "./img/service-3.png",
     title: "Content Creation",
     paragraph:
       "Want to atract people to your website? You have to have the best content in the world. That`s what we do.",
+    id: "content-creation-ctg",
   },
 ];
+
 data.forEach((service) => {
   const serviceElement = `
   <div class="service-content">
@@ -40,5 +51,6 @@ data.forEach((service) => {
   <p>${service.paragraph}</p> 
   </div>
   </div>`;
+
   serviceData.innerHTML += serviceElement;
 });
