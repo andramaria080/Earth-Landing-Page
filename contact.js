@@ -2,16 +2,12 @@ const form = document.getElementById("contactForm");
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  const emailForm = document.getElementById("emailForm");
-  const nameForm = document.getElementById("nameForm");
-  const phoneForm = document.getElementById("phoneForm");
-  const messageForm = document.getElementById("messageForm");
-  const emailInput = emailForm.value;
-  const nameInput = nameForm.value;
-  const phoneInput = phoneForm.value;
-  const messageInput = messageForm.value;
+  const emailForm = document.getElementById("emailForm").value;
+  const nameForm = document.getElementById("nameForm").value;
+  const phoneForm = document.getElementById("phoneForm").value;
+  const messageForm = document.getElementById("messageForm").value;
 
-  if (!emailInput || !nameInput || !phoneInput || !messageInput) {
+  if (!emailForm || !nameForm || !phoneForm || !messageForm) {
     alert("All fields are required");
     return;
   }
