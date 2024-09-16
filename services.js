@@ -35,8 +35,8 @@ cardServices.innerHTML = data
     (item) => `
      <div class="card">
         <div class="card-text">
-        <h1 class="card-title">${item.title}</h1>
-        <p class="card-paragraph">${item.paragraph}</p>
+        <h1>${item.title}</h1>
+        <p>${item.paragraph}</p>
         <button class="primary-btn">EXPLORE</button>
         </div>
         <div class="card-img">
