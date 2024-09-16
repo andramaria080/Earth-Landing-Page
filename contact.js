@@ -1,4 +1,11 @@
+const menuBtn = document.querySelector(".menu-btn");
+const navLinks = document.querySelector(".nav-links");
 const form = document.getElementById("contactForm");
+
+menuBtn.addEventListener("click", function () {
+  navLinks.classList.toggle("active");
+});
+
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
