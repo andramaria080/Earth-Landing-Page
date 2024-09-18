@@ -56,7 +56,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
-nav a:hover {
+.nav-links a:hover {
   color: var(--primary-dark);
 }
 .nav-links a {
