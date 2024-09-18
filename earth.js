@@ -24,21 +24,18 @@ const data = [
     title: "Web Design",
     paragraph:
       "Custom web design for small businesses we help you capture new audience and increase your sales",
-    id: "web-design-ctg",
   },
   {
     image: "./img/service-2.png",
     title: "Graphic Design",
     paragraph:
       "Logos, merchandise and more. Anyone can create nice graphics. We think it`s better to crate memorable ones. ",
-    id: "graphic-design-ctg",
   },
   {
     image: "./img/service-3.png",
     title: "Content Creation",
     paragraph:
       "Want to atract people to your website? You have to have the best content in the world. That`s what we do.",
-    id: "content-creation-ctg",
   },
 ];
 
